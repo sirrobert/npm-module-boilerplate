@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+
+DST="$1"
+
+SRC="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+cp -r "$SRC/.babelrc"      "$DST"
+cp -r "$SRC/.editorconfig" "$DST"
+cp -r "$SRC/.eslintignore" "$DST"
+cp -r "$SRC/.eslintrc"     "$DST"
+cp -r "$SRC/.gitignore"    "$DST"
+cp -r "$SRC/package.json"  "$DST"
+cp -r "$SRC/README.md"     "$DST"
+cp -r "$SRC/src"           "$DST"
+cp -r "$SRC/test"          "$DST"
+cp -r "$SRC/.travis.yml"   "$DST"
+
